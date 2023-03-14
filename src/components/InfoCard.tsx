@@ -42,6 +42,7 @@ function InfoCard() {
       </div>
 
       <div className="flex lg:flex-row flex-col gap-2 m-2">
+        {/* first section */}
         <div className="lg:w-[20vw]">
           <div className="bg-darkGray h-[160px] flex flex-col justify-center items-center font-sans">
             <p className="text-2xl font-light ">Total Confirmed</p>
@@ -53,7 +54,7 @@ function InfoCard() {
               Confirmed Cases by Country/Region
             </p>
 
-            <div className="h-[480px] overflow-y-auto">
+            <div className="h-[517px] overflow-y-auto">
               {isLoading ? (
                 <p className="text-base text-center">Loading...</p>
               ) : (
@@ -82,7 +83,7 @@ function InfoCard() {
               <p className="font-light text-xl">Total Deaths</p>
               <p className=" lg:text-6xl text-3xl">18291</p>
 
-              <div className="h-[310px] w-full overflow-y-auto mt-[15px]">
+              <div className="h-[340px] w-full overflow-y-auto mt-[15px]">
                 {isLoading ? (
                   <p className="text-base text-center">Loading...</p>
                 ) : (
@@ -114,7 +115,7 @@ function InfoCard() {
               <p className="font-light text-xl ">Total Recovered</p>
               <p className="text-matteGreen lg:text-6xl text-3xl">19228</p>
 
-              <div className="h-[310px] w-full overflow-y-auto mt-[15px]">
+              <div className="h-[340px] w-full overflow-y-auto mt-[15px]">
                 {isLoading ? (
                   <p className="text-base text-center">Loading...</p>
                 ) : (
