@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 import graph from "./assets/graphs/graph.svg";
+import map from "./assets/graphs/map.svg";
+
 import { Skeleton } from "@mui/material";
 import { padding } from "@mui/system";
 
@@ -82,10 +84,12 @@ function InfoCard() {
           </div>
         </div>
         {/* middle section */}
-        <div className="bg-darkGray lg:w-[50vw]"></div>
+        <div className="bg-darkGray lg:w-[50vw]">
+          <img src={map} alt={map}/>
+        </div>
 
         {/* third section */}
-        <div className="lg:w-[30vw] flex flex-col gap-2 justify-between">
+        <div className="lg:w-[30vw] flex flex-col gap-2 lg:justify-between">
           <div className=" flex lg:flex-row flex-col gap-2">
             {/* total deaths */}
             <div className="bg-darkGray lg:w-[20vw] flex flex-col justify-start items-center font-sans pt-[15px]">
