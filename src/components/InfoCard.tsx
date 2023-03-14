@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 import graph from "./assets/graphs/graph.svg";
+import { Skeleton } from "@mui/material";
+import { padding } from "@mui/system";
 
 function InfoCard() {
   const [info, setInfo] = useState([] as any);
@@ -56,7 +58,14 @@ function InfoCard() {
 
             <div className="h-[517px] overflow-y-auto">
               {isLoading ? (
-                <p className="text-base text-center">Loading...</p>
+                <div className="p-4">
+                  {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((item: any) => (
+                    <Skeleton
+                      sx={{ color: "#464646", padding: "10px" }}
+                      animation="wave"
+                    />
+                  ))}
+                </div>
               ) : (
                 <>
                   {info.map((item: any) => (
@@ -85,7 +94,15 @@ function InfoCard() {
 
               <div className="h-[340px] w-full overflow-y-auto mt-[15px]">
                 {isLoading ? (
-                  <p className="text-base text-center">Loading...</p>
+                  // <p className="text-base text-center">Loading...</p>
+                  <div className="p-4">
+                    {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((item: any) => (
+                      <Skeleton
+                        sx={{ color: "#464646", padding: "10px" }}
+                        animation="wave"
+                      />
+                    ))}
+                  </div>
                 ) : (
                   <>
                     {info.map((item: any) => (
@@ -117,7 +134,15 @@ function InfoCard() {
 
               <div className="h-[340px] w-full overflow-y-auto mt-[15px]">
                 {isLoading ? (
-                  <p className="text-base text-center">Loading...</p>
+                  // <p className="text-base text-center">Loading...</p>
+                  <div className="p-4">
+                    {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((item: any) => (
+                      <Skeleton
+                        sx={{ color: "#464646", padding: "10px" }}
+                        animation="wave"
+                      />
+                    ))}
+                  </div>
                 ) : (
                   <>
                     {info.map(
